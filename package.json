@@ -1,0 +1,14 @@
+{
+  "name": "Pit-Application",
+  "version": "0.0.1a",
+  "description": "Chantilly 612 Pit Application",
+  "main": "app.js",
+  "author": "Ahmad Bamba",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^1.4.13",
+    "sqlite3": "^3.1.8"
+  }
+}
