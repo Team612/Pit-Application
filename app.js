@@ -28,7 +28,7 @@ app.on('ready', function () {
         'fullscreen': true
     });
 
-    mainWindow.maximize();
+    //mainWindow.maximize();
     //mainWindow.openDevTools();
 
     // and load the index.html of the app.
