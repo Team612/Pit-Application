@@ -1,4 +1,4 @@
-//Pull our match schedule from TBA every 1 minutes
+//Pull our match schedule from TBA every 2 minutes
 
 $(document).ready(function() {
     setInterval(function() {
