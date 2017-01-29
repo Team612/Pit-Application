@@ -42,6 +42,15 @@ $(document).ready(function() {
             }
         }
     });
+
+    //settings
+    $('body').keypress(function(e) {
+        //if space bar is pressed and the inputs are not focued
+        if(e.which === 32 && $('input:focus').length === 0) {
+            //then toggleSettings menu
+            toggleSettings();
+        }
+    });
 });
 
 const toggleSettings = function() {
