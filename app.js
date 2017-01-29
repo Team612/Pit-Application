@@ -20,21 +20,18 @@ app.on('window-all-closed', function () {
 app.on('ready', function () {
     // Create the browser window.
     mainWindow = new BrowserWindow({
-        width: 700,
-        height: 400,
-        'min-width': 1200,
-        'min-height': 400,
+        width: 920,
+        height: 620,
+        'min-width': 920,
+        'min-height': 620,
         'accept-first-mouse': true
     });
 
     mainWindow.maximize();
+    mainWindow.openDevTools();
 
     // and load the index.html of the app.
-    mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, 'index.html'),
-        protocol: 'file:',
-        slashes: true
-    }));
+    mainWindow.loadURL('file://' + __dirname + '/index.html');
 
     // Emitted when the window is closed.
     mainWindow.on('closed', function () {

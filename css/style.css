@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: hidden;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: #45ff42;
+}
+
+#top_bar {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}
+
+#content {
+    padding-top: 1%;
+}
+
+#chantilly_robotics {
+    width: 90%;
+    font-size: 45px;
+    /*display: inline-block;*/
+    border: solid !important;
+    border-width: thin;
+}
+
+#other_teams {
+    font-size: 40px;
+    padding-top: 5%;
+}
+
+#choose {
+
+}
+
+#chosen_team {
+    height: 40px;
+    font-size: 40px;
+}
+
+#settings {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    bottom: 0;
+    display: none;
+}
+
+#delay {
+    font-size: 25px;
+}
+
+#settings ul {
+    list-style: none;
+}
+
+#settings ul li {
+    padding-top: 1%;
+}
+
+#settings-bar {
+    position: absolute;
+    height: 64px;
+    width: 100%;
+    background-color: lightgrey;
+    bottom: 0;
+    padding: 0;
+}

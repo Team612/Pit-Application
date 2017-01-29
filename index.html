@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>612Scout</title>
+    <title>The Pit</title>
+    <meta charset="UTF-8">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Help electron load jQuery-->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 
     <!-- Javascript -->
-    <script>window.$ = window.jQuery = require('./js/min/jquery-3.1.1.min.js');</script>
+    <script>window.$ = window.jQuery = require('./js/jquery-3.1.1.min.js');</script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/current_time.js" charset="utf-8" async></script>
+    <script src="js/update612.js" charset="utf-8" async></script>
     <script src="js/main.js" charset="utf-8"></script>
 </head>
 <body>
+    <div id="top_bar"><img src="img/logo-old.png" alt="" style="height: 100px"></div>
+    <div id="content">
+        <center>
+        <div id="chantilly_robotics">
+            <div id="match"><center><font>Next Match: <span class="red">42</span></font></center></div>
+            <div id="time"></div>
+            <div id="display-delay">Delay: <span class="green">on time</span></div>
+        </div>
+        </center>
 
+        <div id="other_teams">
+            <div id="choose">
+                <center>Enter a team: <input type="text" id="chosen_team"></center>
+            </div>
+            <div id="other_match"></div>
+        </div>
+
+        <div id="settings">
+            <ul style="padding-top: 1%">
+                <li>Manually Enter Delay <input type="text" id="delay" value=""></li>
+                <li>Version 0.0.1a by Ahmad Bamba - Chantilly Robotics Team 612</li>
+            </ul>
+        </div>
+
+        <div id="settings-bar"><img src="img/settings.png" title="Icons made by Gregor Cresnar (http://www.flaticon.com/authors/gregor-cresnar) " onclick="toggleSettings()"></div>
+    </div>
 </body>
 </html>
