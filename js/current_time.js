@@ -22,6 +22,9 @@ $(document).ready(function() {
             ampm = " AM";
         }
 
+        if(hour === 0)
+            hour = 12
+
         if(now.getMinutes() <= 9)
             mins = "0" + now.getMinutes();
         else

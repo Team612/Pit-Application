@@ -24,11 +24,12 @@ app.on('ready', function () {
         height: 620,
         'min-width': 920,
         'min-height': 620,
-        'accept-first-mouse': true
+        'accept-first-mouse': true,
+        'fullscreen': true
     });
 
     mainWindow.maximize();
-    mainWindow.openDevTools();
+    //mainWindow.openDevTools();
 
     // and load the index.html of the app.
     mainWindow.loadURL('file://' + __dirname + '/index.html');
